@@ -21,16 +21,16 @@ class Profile(BaseModel):
     class Budget(BaseModel):
         """Indicates all budget information of the user."""
 
-        actualBudgetPerMonth: int
-        maxBudgetPerMonth: int
-        normBudgetPerMonth: int
-        normBudgetGasolinePerMonth: int
-        normBudgetElectricPerMonth: int
-        maxBudgetGasolinePerMonth: int
-        maxBudgetElectricPerMonth: int
-        normUndershootPercentage: int
-        maxNormUndershootPercentage: int
-        savedBudget: int
+        actualBudgetPerMonth: int | float
+        maxBudgetPerMonth: int | float
+        normBudgetPerMonth: int | float
+        normBudgetGasolinePerMonth: int | float
+        normBudgetElectricPerMonth: int | float
+        maxBudgetGasolinePerMonth: int | float
+        maxBudgetElectricPerMonth: int | float
+        normUndershootPercentage: int | float
+        maxNormUndershootPercentage: int | float
+        savedBudget: int | float
         savedBudgetPayoutAllowed: bool
         holidayCarRaiseAllowed: bool
 

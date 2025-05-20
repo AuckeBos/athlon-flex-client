@@ -31,8 +31,8 @@ class VehicleFilter(Filter):
     IncludeMileageCostsInPricing: bool | None = None
     IncludeFuelCostsInPricing: bool | None = None
     SortBy: str = "PriceInEuro"
-    MaxPricePerMonth: int | None = None
-    ActualBudgetPerMonth: int | None = None
+    MaxPricePerMonth: int | float | None = None
+    ActualBudgetPerMonth: int | float | None = None
 
     @staticmethod
     def from_profile(make: str, model: str, profile: Profile) -> VehicleFilter:
